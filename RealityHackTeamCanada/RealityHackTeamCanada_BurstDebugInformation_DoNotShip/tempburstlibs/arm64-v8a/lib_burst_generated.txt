@@ -9,6 +9,7 @@ Library: /Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Temp/Burst
+--debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/6000.0.34f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Library/Burst
 --output=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
@@ -105,6 +106,7 @@ Library: /Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada
 --float-mode=Fast
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Temp/Burst
+--debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/6000.0.34f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Library/Burst
 --output=/Users/mdeering/src/mdeering/reality-hack-team-21/RealityHackTeamCanada/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
