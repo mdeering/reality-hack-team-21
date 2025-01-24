@@ -11,6 +11,8 @@ public class RaycastManager : MonoBehaviour
 	public GameObject LinePrefab;
 	List<LightBeam> lasers = new List<LightBeam>();
 	List<GameObject> lines = new List<GameObject>();
+	Flashlight flashlight;
+
 
 	//GameObject fire; //hit effects for the laser
 
@@ -20,7 +22,7 @@ public class RaycastManager : MonoBehaviour
 	int circleSize = 5;
 
 	//private Vector3 fireHitPosition;
-	//private bool fireActive = false;
+	private bool active = false;
 
 	public bool includeChildren = true;
 
@@ -46,12 +48,14 @@ public class RaycastManager : MonoBehaviour
 
 	void Awake()
 	{
+
 		instance = this;
 		//fire = GameObject.FindGameObjectWithTag("Fire");
 
 		Vector3 bottom = new Vector3(transform.position.x, transform.position.x - 10, transform.position.z);
 		lineHitPosition = new Vector3[10];
 
+		flashlight = gameObject.GetComponent<Flashlight>();
 		//fireHitPosition = bottom;
 		//fire.SetActive(false);
 	}
@@ -59,14 +63,14 @@ public class RaycastManager : MonoBehaviour
 	void FixedUpdate()
 	{ //Changing this to FixedUpdate lets weaker computers catch a break
 		int linesCount = 0;
-		/*if (!GameManager.blind)
+		if (flashlight.GetFlashLightStatus())
 		{
 			for (int i = 0; i < lasers.Count; i++)
 			{ //faster, doesn't need to allocate duplicate vars
 				linesCount += CalcLaserLine(lasers[i].transform.position + lasers[i].transform.forward * 0.6f, lasers[i].transform.forward, linesCount);
 			}
 		}
-		*/
+		
 		RemoveOldLines(linesCount);
 
 		//moveParticleSystem(fireHitPosition);
@@ -117,7 +121,7 @@ public class RaycastManager : MonoBehaviour
 				}
 				*/
 
-				hit.transform.gameObject.GetComponent<VisObject>().HitByLaser();
+				//hit.transform.gameObject.GetComponent<VisObject>().HitByLaser();
 
 				//move the fire particle system to the hit point
 				lineHitPosition[0] = hit.point;

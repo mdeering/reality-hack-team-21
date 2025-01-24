@@ -31,4 +31,9 @@ public class Flashlight : MonoBehaviour
         _isOn = false;
         Debug.Log("Flashlight is off");
     }
+
+    public bool GetFlashLightStatus()
+    {
+        return _isOn;
+    }
 }
