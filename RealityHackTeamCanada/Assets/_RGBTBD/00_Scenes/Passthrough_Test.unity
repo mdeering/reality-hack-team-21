@@ -431,7 +431,7 @@ MonoBehaviour:
   requestBodyTrackingPermissionOnStartup: 0
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
-  requestScenePermissionOnStartup: 0
+  requestScenePermissionOnStartup: 1
   requestRecordAudioPermissionOnStartup: 0
   _localDimming: 1
   _trackingOriginType: 1
@@ -629,7 +629,7 @@ Transform:
   m_GameObject: {fileID: 1153728631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.87}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -940,7 +940,7 @@ MonoBehaviour:
   passthroughLayerResumed:
     m_PersistentCalls:
       m_Calls: []
-  colorMapEditorType_: 1
+  colorMapEditorType_: 5
   colorMapEditorGradient:
     serializedVersion: 2
     key0: {r: 0.0018129349, g: 1, b: 0, a: 1}
@@ -985,7 +985,7 @@ MonoBehaviour:
   textureOpacity_: 1
   edgeRenderingEnabled_: 0
   edgeColor_: {r: 1, g: 1, b: 1, a: 1}
-  colorMapType: 1
+  colorMapType: 6
 --- !u!1 &1537024900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551084e2ab169204fa36c3e7a5f9186f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmentRaycastManager: {fileID: 2005266019}
+  sphere: {fileID: 0}
+  raycastManager: {fileID: 0}
 --- !u!114 &2005266017
 MonoBehaviour:
   m_ObjectHideFlags: 0
