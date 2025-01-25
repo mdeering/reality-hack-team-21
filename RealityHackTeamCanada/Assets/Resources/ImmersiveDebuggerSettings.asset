@@ -15,6 +15,7 @@ MonoBehaviour:
   debugTypes:
   - AssemblyName: Assembly-CSharp
     DebugTypes:
+    - PassthroughLayerControls
     - Flashlight
   - AssemblyName: Meta.XR.ImmersiveDebugger
     DebugTypes:

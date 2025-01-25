@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDirectionChangeInterval: 0.5
   maxDirectionChangeInterval: 2
-  forceStrength: 2
-  torqueStrength: 0.5
+  forceStrength: 0.1
+  torqueStrength: 0.01
   bottomOffset: 0.5
 --- !u!114 &408329993554381338
 MonoBehaviour:
