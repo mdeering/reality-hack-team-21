@@ -615,6 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1e4ee0f33de464dbcef0774c09d797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBrightnessFlashlight: 1
 --- !u!1 &5133644367169161040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,7 +1922,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 6668
+  m_VersionIndex: 6674
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1975,7 +1976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: ee50c58666fba5d4ea8482e9f2a42dd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2385,7 +2386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: colorMapType
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: compositionDepth
@@ -2393,7 +2394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: colorMapEditorType_
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: colorMapEditorBrightness

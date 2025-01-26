@@ -1,12 +1,15 @@
 using UnityEngine;
 using Meta.XR;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using System.Linq;
 
 public class EnvRaycastManager : MonoBehaviour
 {
     [SerializeField] private GameObject obj;
     [SerializeField] private EnvironmentRaycastManager raycastManager;
     private float distance;
+    private List<float> pastDistances;
     public GameObject anchor;
     public UnityEvent function;
 
@@ -21,9 +24,11 @@ public class EnvRaycastManager : MonoBehaviour
         }
         raycastManager = gameObject.GetComponent<EnvironmentRaycastManager>();
         distance = 10f;
-    }
+        pastDistances = new List<float>();
 
-    private void Update()
+}
+
+private void Update()
     {
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
@@ -46,6 +51,13 @@ public class EnvRaycastManager : MonoBehaviour
             obj.transform.rotation = Quaternion.LookRotation(hit.normal);
 
             distance = Vector3.Distance(this.transform.position, hit.point);
+            pastDistances.Add(distance);
+
+            // Remove the oldest value if the list exceeds max size
+            if (pastDistances.Count > 5)
+            {
+                pastDistances.RemoveAt(0); // Remove the value at index 0
+            }
             moveObject(distance);
         }
         else
@@ -69,7 +81,7 @@ public class EnvRaycastManager : MonoBehaviour
 
     public float getDistance()
     {
-        return distance;
+        return pastDistances.Average(); 
     }
 
 }
