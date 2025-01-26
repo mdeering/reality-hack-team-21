@@ -533,7 +533,7 @@ MonoBehaviour:
   OnTurnOff:
     m_PersistentCalls:
       m_Calls: []
-  _isOn: 1
+  _isOn: 0
 --- !u!114 &5954862499469887812
 MonoBehaviour:
   m_ObjectHideFlags: 0
