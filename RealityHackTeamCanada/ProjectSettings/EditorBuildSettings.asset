@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_RGBTBD/00_Scenes/EnvRaycast_Test.unity
-    guid: 1213d887a1a540745bfb2754823d1369
-  - enabled: 1
     path: Assets/_RGBTBD/00_Scenes/SampleScene.unity
     guid: 8a390d0f431804956b8012145f6cd054
+  - enabled: 1
+    path: Assets/_RGBTBD/00_Scenes/EnvRaycast_Test.unity
+    guid: 1213d887a1a540745bfb2754823d1369
   - enabled: 1
     path: Assets/_RGBTBD/00_Scenes/LayerCake.unity
     guid: 6cbba1b99d993412aa2579204113a896

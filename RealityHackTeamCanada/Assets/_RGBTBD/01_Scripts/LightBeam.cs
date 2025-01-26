@@ -26,7 +26,6 @@ public class LightBeam : MonoBehaviour
         sizeScale = ERManager.getDistance();
         if (transform.Find("Cone") == null)
         {
-            return;
         }
         else
         {
