@@ -1,18 +1,26 @@
 using Meta.XR.ImmersiveDebugger;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Flashlight : MonoBehaviour
 {
     [SerializeField] private GameObject _lightActiveVisual;
-    
-    [DebugMember(Category = "Flashlight")]
-    [SerializeField] private bool _isOn;
+    // List of audio clips to play when the flashlight is turned on or off
+    [SerializeField] private AudioClip[] _audioClips;
+    public UnityEvent OnTurnOn;
+    public UnityEvent OnTurnOff;
+
+    private AudioSource _audioSource;
 
     void Start()
     {
-        _lightActiveVisual.SetActive(_isOn);
+        // Cache our audio source
+        _audioSource = GetComponent<AudioSource>();
     }
+    
+    [DebugMember(Category = "Flashlight")]
+    [SerializeField] private bool _isOn;
 
     [DebugMember(Category = "Flashlight")]
     [Button("💡 Turn On")]
@@ -20,6 +28,8 @@ public class Flashlight : MonoBehaviour
     {
         _lightActiveVisual.SetActive(true);
         _isOn = true;
+        // Play a random audio clip from our list
+        _audioSource.PlayOneShot(_audioClips[Random.Range(0, _audioClips.Length)]);
         Debug.Log("Flashlight is on");
     }
 
@@ -29,6 +39,8 @@ public class Flashlight : MonoBehaviour
     {
         _lightActiveVisual.SetActive(false);
         _isOn = false;
+        // Play a random audio clip from our list
+        _audioSource.PlayOneShot(_audioClips[Random.Range(0, _audioClips.Length)]);
         Debug.Log("Flashlight is off");
     }
 

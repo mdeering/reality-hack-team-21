@@ -525,6 +525,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lightActiveVisual: {fileID: 4184500007406927312}
+  _audioClips: []
+  OnTurnOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTurnOff:
+    m_PersistentCalls:
+      m_Calls: []
   _isOn: 1
 --- !u!114 &5954862499469887812
 MonoBehaviour:
@@ -802,7 +809,7 @@ GameObject:
   - component: {fileID: 3898025294994043331}
   m_Layer: 0
   m_Name: Cone
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
