@@ -2650,7 +2650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: edgeRenderingEnabled_
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2219347192860881689, guid: 1442f44124f0a4e68aeec47f7a038e54, type: 3}
       propertyPath: colorMapEditorBrightness

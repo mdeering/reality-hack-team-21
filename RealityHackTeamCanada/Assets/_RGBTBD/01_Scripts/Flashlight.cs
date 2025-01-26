@@ -16,7 +16,7 @@ public class Flashlight : MonoBehaviour
     void Start()
     {
         // Cache our audio source
-        _audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponentInChildren<AudioSource>();
     }
     
     [DebugMember(Category = "Flashlight")]
