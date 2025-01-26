@@ -14075,6 +14075,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7970340959749649764, guid: 1d89d9a2b23a6a3479a2eb8e9e1b110b, type: 3}
+      propertyPath: colorMapType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970340959749649764, guid: 1d89d9a2b23a6a3479a2eb8e9e1b110b, type: 3}
+      propertyPath: colorMapEditorType_
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970340959749649764, guid: 1d89d9a2b23a6a3479a2eb8e9e1b110b, type: 3}
+      propertyPath: _colorLutSourceTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: abc143c743c644d70bbe6641a6b872b7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
