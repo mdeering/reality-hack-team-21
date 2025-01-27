@@ -7,7 +7,7 @@ public class Flashlight : MonoBehaviour
 {
     [SerializeField] private GameObject _lightActiveVisual;
     // List of audio clips to play when the flashlight is turned on or off
-    [SerializeField] private AudioClip[] _audioClips;
+    [SerializeField] private AudioClip _audioClip;
     public UnityEvent OnTurnOn;
     public UnityEvent OnTurnOff;
 
@@ -29,7 +29,9 @@ public class Flashlight : MonoBehaviour
         _lightActiveVisual.SetActive(true);
         _isOn = true;
         // Play a random audio clip from our list
-        _audioSource.PlayOneShot(_audioClips[Random.Range(0, _audioClips.Length)]);
+        _audioSource.PlayOneShot(_audioClip);
+        // Invoke the event
+        OnTurnOn.Invoke();
         Debug.Log("Flashlight is on");
     }
 
@@ -40,7 +42,9 @@ public class Flashlight : MonoBehaviour
         _lightActiveVisual.SetActive(false);
         _isOn = false;
         // Play a random audio clip from our list
-        _audioSource.PlayOneShot(_audioClips[Random.Range(0, _audioClips.Length)]);
+        _audioSource.PlayOneShot(_audioClip);
+        // Invoke the event
+        OnTurnOff.Invoke();
         Debug.Log("Flashlight is off");
     }
 
