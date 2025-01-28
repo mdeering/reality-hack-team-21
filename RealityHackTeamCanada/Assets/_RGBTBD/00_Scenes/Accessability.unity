@@ -14854,12 +14854,16 @@ PrefabInstance:
       objectReference: {fileID: 1686441333}
     - target: {fileID: 2952695924741392671, guid: 6e4657c0598da2d49a7561511c38cc23, type: 3}
       propertyPath: m_VersionIndex
-      value: 6716
+      value: 6728
       objectReference: {fileID: 0}
     - target: {fileID: 3898025294994043331, guid: 6e4657c0598da2d49a7561511c38cc23, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1686441333}
+    - target: {fileID: 4184500007406927312, guid: 6e4657c0598da2d49a7561511c38cc23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6616004417331110535, guid: 6e4657c0598da2d49a7561511c38cc23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.783
@@ -23215,7 +23219,7 @@ PrefabInstance:
     - target: {fileID: 4341338044881721786, guid: 1d89d9a2b23a6a3479a2eb8e9e1b110b, type: 3}
       propertyPath: OnTurnOn.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: b6bb2b637ccc846dba2fdcd8c723e384, type: 3}
+      objectReference: {fileID: 8300000, guid: e8fe2a224b7784c0da53175e65800d45, type: 3}
     - target: {fileID: 4341338044881721786, guid: 1d89d9a2b23a6a3479a2eb8e9e1b110b, type: 3}
       propertyPath: OnTurnOn.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
